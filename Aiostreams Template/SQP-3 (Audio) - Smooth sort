@@ -94,11 +94,7 @@
       "ongoingSeason ? seasonPack(streams, 'onlySeason') : []",
       "count(streamExpressionScore(cached(streams), 510, 999999)) >= 10 ? streamExpressionScore(streams, -999999, 499) : []"
     ],
-    "preferredStreamExpressions": [
-      "quality(streams, 'Bluray REMUX')",
-      "quality(streams, 'WEB-DL')",
-      "quality(streams, 'WEBRip')"
-    ],
+    "preferredStreamExpressions": [],
     "rankedStreamExpressions": [
       {
         "expression": "resolution(streams, '2160p')",
@@ -245,6 +241,10 @@
         {
           "key": "seadex",
           "direction": "desc"
+        },
+        {
+        "key": "streamExpressionMatched",
+        "direction": "desc"
         },
         {
           "key": "streamExpressionScore",
