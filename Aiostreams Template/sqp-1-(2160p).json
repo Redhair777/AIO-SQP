@@ -153,11 +153,6 @@
     "precacheSelector": "count(cached(streams)) == 0 ? uncached(streams) : []",
     "enableSeadex": true,
     "regexOverrides": [],
-    "proxy": {
-      "id": "mediaflow",
-      "proxiedServices": [],
-      "proxiedAddons": []
-    },
     "preferredRegexPatterns": [],
     "rankedStreamExpressions": [
       {
@@ -222,7 +217,6 @@
     "preferredStreamTypes": [],
     "preferredVisualTags": [],
     "preferredAudioTags": [],
-    "catalogModifications": [],
     "selOverrides": [
       {
         "expression": "/*DV*/ isAnime ? [] : visualTag(streams, 'DV')",
@@ -401,9 +395,6 @@
         ]
       }
     ],
-    "tmdbAccessToken": "<template_placeholder>",
-    "tmdbApiKey": "<template_placeholder>",
-    "tvdbApiKey": "<template_placeholder>",
     "excludeUncached": true,
     "excludedStreamExpressions": [
       "queryType == 'anime.series' ? resolution(streams, '2160p') : []",
