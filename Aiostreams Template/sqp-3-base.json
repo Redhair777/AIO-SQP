@@ -146,15 +146,6 @@
         "disabled": true
       }
     ],
-    "dynamicAddonFetching": {
-      "enabled": false,
-      "condition": ""
-    },
-    "groups": {
-      "enabled": false,
-      "groupings": [],
-      "behaviour": "sequential"
-    },
     "sortCriteria": {
       "global": [
         {
@@ -250,12 +241,6 @@
         "name": "{service.cached::istrue[\"⚡\"||\"⏳\"]}{addon.name} \n{stream.resolution::=2160p[\"✨|4K\"||\"\"]}{stream.resolution::=1440p[\"🚀|1440p\"||\"\"]}\n{stream.resolution::=1080p[\"🔥|1080p\"||\"\"]}{stream.resolution::=720p[\"💿|720p\"||\"\"]}{stream.resolution::=576p[\"💩|SD\"||\"\"]}{stream.resolution::=480p[\"💩|LQ\"||\"\"]}{stream.resolution::exists[\"\"||\"\"]}{stream.resolution::exists[\"\"||\"💩|Unknown\"]}\n{stream.type::=p2p[\"[Torrent P2P: ⚠️]\"||\"\"]}\n{stream.type::=http[\"[Web Link: 💻]\"||\"\"]}\n{stream.type::=live[\"[Live: 📺]\"||\"\"]}\n{stream.type::=Debrid[\"🍁|Debrid \"||\"\"]}{stream.type::=Usenet[\"♻️|Usenet \"||\"\"]}",
         "description": "{service.name::exists[\"💾 {service.name} \"||\"\"]}{stream.size::>0[\"📦 {stream.size::bytes} \"||\"\"]}{stream.folderSize::>0[\"📂 \"||\"\"]}\n{stream.title::exists[\"🎟️ {stream.title}\"||\"\"]}{stream.year::exists[\" ({stream.year})\"||\"\"]}{stream.season::>=0[\" S\"||\"\"]}{stream.season::<=9[\"0\"||\"\"]}{stream.season::>0[\"{stream.season}\"||\"\"]}{stream.episode::>=0[\" • E\"||\"\"]}{stream.episode::<=9[\"0\"||\"\"]}{stream.episode::>0[\"{stream.episode}\"||\"\"]} {stream.duration::>0[\"⏱️ {stream.duration::time} \"||\"\"]}{stream.message::exists[\"🗃️ {stream.message} \"||\"\"]}\n{stream.filename::~extended[\"⏩ Extended Cut \"||\"\"]}{stream.filename::~theatrical[\"🎭 Theatrical Cut \"||\"\"]}{stream.filename::~director::or::stream.filename::~dc[\"⭐ Director's Cut \"||\"\"]}{stream.filename::~ultimate[\"💎 Ultimate Edition \"||\"\"]}{stream.filename::~alternate[\"🔀 Alternate Edition \"||\"\"]}{stream.filename::~redux[\"🔄 Redux \"||\"\"]}{stream.filename::~complete[\"⭐ Complete Edition \"||\"\"]}{stream.filename::~special[\"🎁 Special Edition \"||\"\"]}{stream.filename::~anniversary[\"🎉 Anniversary Edition \"||\"\"]}{stream.filename::~remastered[\"⭐ Remastered \"||\"\"]}{stream.filename::~collectors[\"🎖️ Collector's Edition \"||\"\"]}{stream.filename::~unrated[\"🚫 Unrated Cut \"||\"\"]}{stream.filename::~uncensored[\"🔞 Uncensored \"||\"\"]}{stream.filename::~workprint[\"🧪 Workprint \"||\"\"]}{stream.filename::~preview[\"👀 Preview Cut \"||\"\"]}{stream.filename::~festival[\"🏆 Festival Cut \"||\"\"]}{stream.filename::~superfan[\"⭐ Superfan Edition \"||\"\"]}\n{stream.indexer::exists[\"📡 {stream.indexer}\"||\"\"]} {stream.releaseGroup::exists[\"🏷️ {stream.releaseGroup}\"||\"\"]} \n{stream.quality::exists[\"🎥 {stream.quality} \"||\"\"]}{stream.visualTags::exists[\"📺 {stream.visualTags::join(' | ')}\"||\"\"]} {stream.encode::exists[\"🎞️ {stream.encode} \"||\"\"]}\n{stream.audioTags::exists[\"🎧 {stream.audioTags::join(' | ')} \"||\"\"]}\n{stream.languages::exists[\"📣 {stream.languages::join(' · ')::replace('Multi','ᴍᴜʟᴛɪ')::replace('Dual Audio','ᴅᴜᴏ')::replace('Dubbed','ᴅᴜʙ')::replace('English','ᴇɴɢ')::replace('Japanese','ᴊᴀᴘ')::replace('Korean','ᴋᴏʀ')::replace('Russian','ʀᴜs')::replace('Arabic','ᴀʀᴀ')::replace('Portuguese','ᴘᴏʀ')::replace('Spanish','sᴘᴀ')::replace('Latino','ʟᴀᴛ')::replace('French','ғʀᴀ')::replace('German','ᴅᴇᴜ')::replace('Italian','ɪᴛᴀ')::replace('Hindi','ʜɪɴ')::replace('Bengali','ʙᴇɴ')::replace('Punjabi','ᴘᴀɴ')::replace('Marathi','ᴍᴀʀ')::replace('Gujarati','ɢᴜᴊ')::replace('Tamil','ᴛᴀᴍ')::replace('Telugu','ᴛᴇʟ')::replace('Kannada','ᴋᴀɴ')::replace('Malayalam','ᴍʟʏ')::replace('Thai','ᴛʜᴀ')::replace('Vietnamese','ᴠɪᴇ')::replace('Indonesian','ɪɴᴅ')::replace('Turkish','ᴛᴜʀ')::replace('Hebrew','ʜᴇʙ')::replace('Persian','ᴘᴇʀ')::replace('Ukrainian','ᴜᴋʀ')::replace('Greek','ɢʀᴇ')::replace('Lithuanian','ʟɪᴛ')::replace('Latvian','ʟᴀᴛ')::replace('Estonian','ᴇsᴛ')::replace('Polish','ᴘᴏʟ')::replace('Czech','ᴄᴢᴇ')::replace('Slovak','sʟᴋ')::replace('Hungarian','ʜᴜɴ')::replace('Romanian','ʀᴏᴍ')::replace('Bulgarian','ʙᴜʟ')::replace('Serbian','sᴇʀ')::replace('Croatian','ᴄʀᴏ')::replace('Slovenian','sʟᴠ')::replace('Dutch','ᴅᴜᴛ')::replace('Danish','ᴅᴀɴ')::replace('Finnish','ғɪɴ')::replace('Swedish','sᴡᴇ')::replace('Norwegian','ɴᴏʀ')::replace('Malay','ᴍᴀʟ')::replace('Chinese','ᴄʜɪ')}\"||\"\"]}\n{stream.seadexBest::istrue[\"🌊 Best\"||\"\"]}{stream.seadex::istrue::and::stream.seadexBest::isfalse[\"🌊 Tier 1\"||\"\"]}{stream.seadex::isfalse::and::stream.nSeScore::>=95[\"🏆 Best\"||\"\"]}{stream.seadex::isfalse::and::stream.nSeScore::>=80::and::stream.nSeScore::<95[\"🏆 Tier 1\"||\"\"]}{stream.seadex::isfalse::and::stream.nSeScore::>=60::and::stream.nSeScore::<80[\"🏆 Tier 2\"||\"\"]}{stream.seadex::isfalse::and::stream.nSeScore::>=40::and::stream.nSeScore::<60[\"🏆 Tier 3\"||\"\"]}{stream.seadex::isfalse::and::stream.nSeScore::>=20::and::stream.nSeScore::<40[\"🏆 Tier 4\"||\"\"]}{stream.seadex::isfalse::and::stream.nSeScore::>=5::and::stream.nSeScore::<20[\"🏆 Tier 5\"||\"\"]}{stream.seadex::isfalse::and::stream.nSeScore::<5[\"🗑️ Subpar\"||\"\"]}{stream.library::istrue[\" | 📚 Library\"||\"\"]}{stream.proxied::istrue[\" |🔒\"||\" | 🔓\"]}"
       }
-    },
-    "proxy": {
-      "enabled": false,
-      "id": "builtin",
-      "proxiedAddons": [],
-      "proxiedServices": []
     },
     "resultLimits": {},
     "size": {
@@ -360,7 +345,6 @@
       ]
     },
     "precacheNextEpisode": false,
-    "catalogModifications": [],
     "cacheAndPlay": {
       "enabled": false,
       "streamTypes": []
