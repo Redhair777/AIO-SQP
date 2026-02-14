@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "id": "sqp-3-(audio)---base-2026-02-13.15-35-23-1jgfwf7",
+    "id": "sqp-3-base-template",
     "name": "SQP-3 Base",
     "description": "Template for the best possible Visual and Audio quality to be pushed to the top result. Prefers 1080p Remux over 4K Web-DL in edge cases.",
     "source": "external",
@@ -8,7 +8,7 @@
     "version": "1.0.0",
     "category": "SQP",
     "serviceRequired": false,
-    "setToSaveInstallMenu": true
+    "setToSaveInstallMenu": false
   },
   "config": {
     "trusted": false,
