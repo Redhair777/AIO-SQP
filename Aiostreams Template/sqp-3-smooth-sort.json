@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "id": "sqp-3-(audio)---smooth-sort-2026-02-13.16-04-04-6ypn2qe",
+    "id": "sqp-3-smooth-sort-template",
     "name": "SQP-3 Smooth sort",
     "description": "Same as \"SQP-3 Base\" but provides a more smoother sorting in UI for aesthetical purpose. Would recommend sticking with the Base version if you don't care about the lower ranked results.",
     "source": "external",
