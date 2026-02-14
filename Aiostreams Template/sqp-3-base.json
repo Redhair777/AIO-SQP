@@ -108,19 +108,19 @@
         "enabled": true
       },
       {
-  "expression": "/*DV + HDR10+*/ isAnime ? [] : visualTag(visualTag(streams, 'DV'), 'HDR10+')",
-  "score": 1200,
-  "enabled": true
+        "expression": "/*DV + HDR10+*/ isAnime ? [] : visualTag(visualTag(streams, 'DV'), 'HDR10+')",
+        "score": 1200,
+        "enabled": true
       },
       {
-  "expression": "/*DV (without HDR10+)*/ isAnime ? [] : negate(visualTag(streams, 'HDR10+'), visualTag(streams, 'DV'))",
-  "score": 1000,
-  "enabled": true
+        "expression": "/*DV (without HDR10+)*/ isAnime ? [] : negate(visualTag(streams, 'HDR10+'), visualTag(streams, 'DV'))",
+        "score": 1000,
+        "enabled": true
       },
       {
-  "expression": "/*HDR10+ (without DV)*/ isAnime ? [] : negate(visualTag(streams, 'DV'), visualTag(streams, 'HDR10+'))",
-  "score": 1000,
-  "enabled": true
+        "expression": "/*HDR10+ (without DV)*/ isAnime ? [] : negate(visualTag(streams, 'DV'), visualTag(streams, 'HDR10+'))",
+        "score": 1000,
+        "enabled": true
       },
       {
         "expression": "language(streams, 'English')",
