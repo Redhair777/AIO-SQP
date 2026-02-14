@@ -8,10 +8,9 @@
     "version": "1.0.0",
     "category": "SQP",
     "serviceRequired": false,
-    "setToSaveInstallMenu": true
+    "setToSaveInstallMenu": false
   },
   "config": {
-    "presets": [],
     "formatter": {
       "id": "custom",
       "definition": {
