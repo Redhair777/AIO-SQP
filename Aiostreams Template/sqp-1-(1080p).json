@@ -153,11 +153,6 @@
     "precacheSelector": "count(cached(streams)) == 0 ? uncached(streams) : []",
     "enableSeadex": true,
     "regexOverrides": [],
-    "proxy": {
-      "id": "mediaflow",
-      "proxiedServices": [],
-      "proxiedAddons": []
-    },
     "preferredRegexPatterns": [],
     "rankedStreamExpressions": [
       {
@@ -217,7 +212,6 @@
     "preferredStreamTypes": [],
     "preferredVisualTags": [],
     "preferredAudioTags": [],
-    "catalogModifications": [],
     "selOverrides": [
       {
         "expression": "/*DV*/ isAnime ? [] : visualTag(streams, 'DV')",
