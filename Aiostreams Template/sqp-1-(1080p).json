@@ -8,10 +8,9 @@
     "version": "1.0.0",
     "category": "SQP",
     "serviceRequired": false,
-    "setToSaveInstallMenu": true
+    "setToSaveInstallMenu": false
   },
   "config": {
-    "presets": [],
     "formatter": {
       "id": "custom",
       "definition": {
@@ -397,9 +396,6 @@
         ]
       }
     ],
-    "tmdbAccessToken": "<template_placeholder>",
-    "tmdbApiKey": "<template_placeholder>",
-    "tvdbApiKey": "<template_placeholder>",
     "excludeUncached": true,
     "excludedStreamExpressions": [
       "queryType == 'anime.series' ? resolution(streams, '2160p') : []",
