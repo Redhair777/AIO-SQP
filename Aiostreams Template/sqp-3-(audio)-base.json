@@ -82,7 +82,7 @@
     "excludeCachedFromAddons": [],
     "excludeCachedFromServices": [],
     "excludeCachedFromStreamTypes": [],
-    "excludeUncached": false,
+    "excludeUncached": true,
     "excludeUncachedFromAddons": [
       "644"
     ],
