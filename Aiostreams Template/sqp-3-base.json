@@ -83,9 +83,7 @@
     "excludeCachedFromServices": [],
     "excludeCachedFromStreamTypes": [],
     "excludeUncached": true,
-    "excludeUncachedFromAddons": [
-      "644"
-    ],
+    "excludeUncachedFromAddons": [],
     "excludeUncachedFromServices": [],
     "excludeUncachedFromStreamTypes": [],
     "excludedStreamExpressions": [
@@ -311,9 +309,6 @@
         "filter"
       ]
     },
-    "tmdbAccessToken": "<template_placeholder>",
-    "tmdbApiKey": "<template_placeholder>",
-    "tvdbApiKey": "<template_placeholder>",
     "yearMatching": {
       "enabled": true,
       "strict": false,
@@ -365,85 +360,6 @@
       ]
     },
     "precacheNextEpisode": false,
-    "precacheSelector": "count(cached(streams)) == 0 ? uncached(streams) : []",
-    "services": [
-      {
-        "id": "realdebrid",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "alldebrid",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "premiumize",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "debridlink",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "torbox",
-        "enabled": true,
-        "credentials": {}
-      },
-      {
-        "id": "stremio_nntp",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "nzbdav",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "altmount",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "offcloud",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "putio",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "easynews",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "easydebrid",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "debrider",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "pikpak",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "seedr",
-        "enabled": false,
-        "credentials": {}
-      }
-    ],
-    "presets": [],
     "catalogModifications": [],
     "cacheAndPlay": {
       "enabled": false,
