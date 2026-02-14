@@ -4,7 +4,7 @@
     "name": "SQP-3 Smooth sort",
     "description": "Same as \"SQP-3 Base\" but provides a more smoother sorting in UI for aesthetical purpose. Would recommend sticking with the Base version if you don't care about the lower ranked results.",
     "source": "external",
-    "author": "Red Hair",
+    "author": "Redhair",
     "version": "1.0.0",
     "category": "SQP",
     "serviceRequired": false,
